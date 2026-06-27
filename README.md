@@ -40,9 +40,10 @@ The low R-squared on the outcome model is expected and does not invalidate the c
 
 **Heterogeneity findings:**
 
-- Sports products showed the highest average CATE among all categories.
-- The South region (Paraná, Santa Catarina, Rio Grande do Sul) showed the highest regional CATE.
-- 29 sellers were identified in the low-early-rate group as high-priority logistics investment targets.
+- Health and beauty was the category with the highest average CATE (1.256 in the Northeast, 1.202 in the South).
+- São Paulo showed the lowest state-level CATE (1.111) despite having the largest sample (2,858 test orders). This likely reflects market maturity: SP customers have high baseline delivery expectations, so early arrival generates less incremental satisfaction.
+- Mato Grosso and Maranhão showed the highest state-level CATEs, consistent with the hypothesis that the surprise effect is larger where fast delivery is less common.
+- North and Centro-Oeste appear in grey on the choropleth because Olist sellers are heavily concentrated in the South and Southeast. MT and MS appear only because they are mapped to Centro-Oeste but had very few orders (2 each) — treat those estimates with caution.
 
 ---
 
@@ -143,8 +144,7 @@ Estimated runtimes on a standard laptop:
 
 **GATES table (Cell 14):** The correlation of 0.888 between predicted CATE quintiles and observed treatment-control gaps means the model is reliably identifying which orders benefit most. This is a high value for noisy review data.
 
-**State choropleth (Cell 20):** Shows the geographic pattern of the early delivery effect. States in the South and Southeast tend to have higher CATE, which is consistent with those regions having denser consumer demand and higher competitive pressure on service quality.
-
+**State choropleth (Cell 20):** The states with data are concentrated in the South and Southeast, where the vast majority of Olist sellers operate. States in the North and Centro-Oeste appear in grey. Among states with sufficient data, São Paulo shows the lowest CATE despite the largest sample — a result consistent with market maturity and high baseline customer expectations. The effect is stronger in states where fast delivery is historically less common.
 **Bubble map (Cell 21):** Overlays order volume and top beneficiary category on the Brazil map, giving a logistics team a visual starting point for regional investment prioritization.
 
 **Opportunity ranking (Cell 17):** `olist_delivery_cate_ranking.csv` lists sellers sorted by precision-weighted CATE. The `opportunity_score` column is a 0-100 percentile rank. The top-ranked sellers in health and beauty (South and Southeast) represent the clearest targets for a logistics partnership or fulfillment center enrollment program.
